@@ -15,5 +15,5 @@ class TelegramGlossy:
 
         self.clients: tp.Mapping[str, ClientStatus] = dict()
 
-    def run():
+    def run(self):
         self.bot.infinity_polling()

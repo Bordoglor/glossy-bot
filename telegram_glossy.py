@@ -30,17 +30,13 @@ class TelegramGlossy:
         keyboard = self._make_keyboard(word)
 
         self.bot.send_message(reply.message.chat.id, answer, reply_markup=keyboard, parse_mode='Markdown')
-        # self.bot.send_message(reply.message.chat.id, "The word was " + word + "\nAnd command was " + command)
-
 
     def _handle_messages(self, messages):
         for message in messages:
             self._handle_message(message)
 
     def _handle_message(self, message):
-        print(message)
-        # print(message.text)
-        # print()
+        # print(message)
         if message.content_type != "text":
             self.bot.send_message(message.chat.id, "Only text content is allowed")
             return
@@ -50,7 +46,6 @@ class TelegramGlossy:
             self.bot.send_message(message.chat.id, "No such word")
             return
 
-        # word = message.text
         keyboard = self._make_keyboard(message.text.lower())
 
         self.bot.send_message(message.chat.id, text="Choose the option!", reply_markup=keyboard)
@@ -70,10 +65,6 @@ class TelegramGlossy:
         return keyboard
 
     def _get_definitions(self, word: str) -> str:
-        # tmp_definitions = []
-        # for line in self.dictionary.definition:
-            # tmp_definitions.append(line.replace(f'{word}', f'*{word}*').capitalize())
-        # try:
         if self.dictionary.definition(word) == "":
             return f'*{word.upper()}*' + '\n'+"No information about definition"
         answer = f'*{word.upper()}*'+'\nDefinitions:'+'\n⦁ '+'\n⦁ '.join(self.dictionary.definition(word))

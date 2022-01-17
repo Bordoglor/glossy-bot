@@ -21,8 +21,6 @@ def parse_args():
 def run():
     args = parse_args()
     words_api = WordsApi(args.host, args.key)
-    # words_api = WordsApi()
-    # words_api("home")
     telegram_bot = TelegramGlossy(args.token, words_api)
 
     telegram_bot.run()

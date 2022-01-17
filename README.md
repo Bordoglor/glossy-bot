@@ -11,7 +11,9 @@ Computer network architecture".*
 5. Antonyms 
 6. Examples 
 
-To interact with GlossyBot use [Link](https://t.me/NandCBot)
+To see an example of interaction with GlossyBot use [Link](https://drive.google.com/file/d/1fXtG_TTWoZlEsDNMNBqoB8CubAYYp6-i/view?usp=sharing)
+
+To interact wit the bot (if it's started) use [Link](https://t.me/NandCBot)
 
 ### How to install and run GlossyBot local
 
@@ -22,6 +24,10 @@ To interact with GlossyBot use [Link](https://t.me/NandCBot)
    - HOST and KEY: unique identifiers needed for connection with WordsApi
 
 ### More about GlossyBot development
+
+The main idea of this project is a creation a user-friendly dictionary with a comprehensible interface for quick information access.
+
+A chat with the GlossyBot can be used as a storage for previously requested information.
 
 This bot works with API of [WordsAPI](https://www.wordsapi.com/).
 

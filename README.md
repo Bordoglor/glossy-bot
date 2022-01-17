@@ -15,12 +15,9 @@ To interact with GlossyBot use [Link](https://t.me/NandCBot)
 
 ### How to install and run GlossyBot local
 
-1. Clone the repository:
->git clone https://github.com/Bordoglor/glossy-bot.git
-2. Install libraries via command:
->pip install -r requirements.txt
-4. Run with command:
->python run.py TOKEN HOST KEY
+1. Clone the repository: `git clone https://github.com/Bordoglor/glossy-bot.git`
+2. Install libraries via command: `pip install -r requirements.txt`
+4. Run with command: `python run.py TOKEN HOST KEY`
    - TOKEN: a unique telegram bot token needed for connection with Telegram server
    - HOST and KEY: unique identifiers needed for connection with WordsApi
 
